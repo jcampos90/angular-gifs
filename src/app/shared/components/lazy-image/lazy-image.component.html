@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-center fadeIn">
+  <img [src]="url" [alt]="alt" (load)="loaded = true" class="card-img-top" />
+
+  <img
+    *ngIf="!loaded"
+    src="assets/loader.svg"
+    height="40"
+    width="40"
+    class="mt-3"
+    alt=""
+
+  />
+</div>
